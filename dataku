@@ -1,0 +1,16 @@
+let nama = "Fakhril"
+let thn_lahir = 2011;
+let thn_ini = 2021;
+
+function umur(skr,lahir)
+{
+	return skr - lahir;
+}
+
+dataku = `Nama: ${nama} <br>
+          Lahir: ${thn_lahir}<br
+          Age: ${umur(thn_ini,thn_lahir)}<br>
+          Kategory Umur: ${thn_lahir>2021 ? 'Tua' : 'Muda'}`;
+
+hasil = document.querySelector("#hasil");
+hasil.innerHTML = dataku;
